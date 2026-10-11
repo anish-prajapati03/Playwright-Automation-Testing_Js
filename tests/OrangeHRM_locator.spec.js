@@ -9,6 +9,8 @@ test('OrangeHRM Locators', async ({ page }) => {
     await page.getByPlaceholder('Password').fill('admin123');
 
     await page.getByRole('button', { name: 'Login' }).click();
+    await page.getByAltText("profile picture").click();
+    await page.getByText("Logout");
 
     // Verify successful login
     await expect(
