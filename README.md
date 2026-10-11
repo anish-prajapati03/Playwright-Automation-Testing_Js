@@ -154,3 +154,9 @@ Aspiring QA Engineer | Manual Testing | Automation Testing with Playwright | Jav
 ## ⚠️ Disclaimer
 
 This project is created for educational and practice purposes using the publicly available OrangeHRM demo application. It is not affiliated with or endorsed by OrangeHRM.
+
+## Command
+npx playwright test OrangeHRM_URL.spec.js --headed           // run the test through file name 
+npx playwright test -g "OrangeHRM_codegen" --headed         // Run the test through title
+npx playwright codegen -o .\tests\PlaywrightCodeGen.spec.js    // create a separate file where codegen script automatic written.
+
