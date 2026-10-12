@@ -159,4 +159,5 @@ This project is created for educational and practice purposes using the publicly
 npx playwright test OrangeHRM_URL.spec.js --headed           // run the test through file name 
 npx playwright test -g "OrangeHRM_codegen" --headed         // Run the test through title
 npx playwright codegen -o .\tests\PlaywrightCodeGen.spec.js    // create a separate file where codegen script automatic written.
-
+npx playwright test -g "OrangeHRM_codegen" --headed --trace  // track the error
+npx playwright test --ui //debugging through UI
