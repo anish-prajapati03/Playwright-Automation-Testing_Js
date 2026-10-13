@@ -1,9 +1,10 @@
 // @ts-check
-import{test,expect} from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 
-test('Validate the title of OrangeHRM website', async({page})=>{
+test('Handling Radio Button', async ({ page }) => {
     await page.goto('https://demoqa.com/automation-practice-form');
-   
-
+    await page.locator('//label[normal-space()="Male"]').click();
+    await page.locator('//label[normal-space()="Female"]').check();
+    await page.waitForTimeout(10000);
 })
